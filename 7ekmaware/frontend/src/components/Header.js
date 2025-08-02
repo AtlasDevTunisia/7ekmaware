@@ -1,6 +1,6 @@
 // frontend/src/components/ui/Header.js
 import React from 'react';
-import './Header.css'; // optional, or use App.css if you prefer
+import './App.css'; // optional, or use App.css if you prefer
 
 const Header = () => {
   return (
@@ -19,3 +19,4 @@ const Header = () => {
 };
 
 export default Header;
+
