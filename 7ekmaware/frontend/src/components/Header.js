@@ -1,28 +1,19 @@
+// frontend/src/components/ui/Header.js
 import React from 'react';
+import './Header.css'; // optional, or use App.css if you prefer
 
-const Header = ({ activeSection, scrollToSection }) => {
+const Header = () => {
   return (
-    <header className="dark-header">
-      <div className="dark-logo">
-        <span className="display-medium" style={{ color: 'var(--brand-primary)' }}>
-          7EKMA-WARE
-        </span>
+    <header className="site-header">
+      <div className="logo-container">
+        <a href="/">
+          <img
+            src="/7ekmaware-logo.png"
+            alt="7EKMAWARE Logo"
+            className="logo"
+          />
+        </a>
       </div>
-      
-      <nav className="dark-nav">
-        <a 
-          className={`dark-nav-link ${activeSection === 'home' ? 'active' : ''}`}
-          onClick={() => scrollToSection('home')}
-        >
-          Home
-        </a>
-        <a 
-          className={`dark-nav-link ${activeSection === 'services' ? 'active' : ''}`}
-          onClick={() => scrollToSection('services')}
-        >
-          Services
-        </a>
-      </nav>
     </header>
   );
 };
